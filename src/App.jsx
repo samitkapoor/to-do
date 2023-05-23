@@ -33,11 +33,17 @@ export default function App() {
     });
   }
 
+  function deleteItem(key) {
+    setTodoList(currentTodo => {
+      return currentTodo.filter(todoItem => todoItem.id != key)
+    })
+  }
+
   return <div className="background">
     <div className="opaque-bg"></div>
     <div className="app">
       <MyForm newItem={newItem} onSubmit={addNewItem} onChange={changeNewItem}></MyForm>
-      <MyTasks todoList={todoList} onToggleComplete={toggleCompleteCheck}></MyTasks>
+      <MyTasks todoList={todoList} onToggleComplete={toggleCompleteCheck} onDelete={deleteItem}></MyTasks>
     </div>
   </div>
 }

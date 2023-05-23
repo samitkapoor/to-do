@@ -10,7 +10,7 @@ export default function MyTasks(props) {
                     {item.title}
                 </h1>
                 <div className="action">
-                    <button>
+                    <button onClick={() => props.onDelete(item.id)}>
                         <i className="fa-regular fa-trash-can action-btn danger"></i>
                     </button>
                     <button onClick={() => props.onToggleComplete(item.id, item.completed==false?true:false)}>
