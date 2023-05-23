@@ -4,6 +4,8 @@
 
 /* this form represents the "Enter task title" input and submit button */
 form {
+  margin-top: 20vh;
+
   display: flex;
   flex-direction: column;
   gap: 10px;

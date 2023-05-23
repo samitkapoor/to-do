@@ -3,7 +3,7 @@ import "../styles/myTasks.css";
 export default function MyTasks(props) {
     const todoList = props.todoList;
 
-    return <div className="tasks">
+    return todoList.length !== 0 && <div className="tasks">
         {todoList.map(item => { 
             return <div key={item.id} className="task-item">
                 <h1 className="title">

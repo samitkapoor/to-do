@@ -3,12 +3,49 @@
   padding: 0;
 }
 
+.tasks {
+  width: 800px;
+  height: 50vh;
+
+  background: rgba(136, 136, 136, 0.103);
+
+  overflow-y: scroll;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.tasks::-webkit-scrollbar {
+  width: 5px;
+}
+
+.tasks::-webkit-scrollbar-thumb {
+  background-color: rgb(83, 80, 80);
+
+  transition: 200ms;
+}
+
+.tasks::-webkit-scrollbar-thumb:hover {
+  background-color: white;
+}
+
+.tasks::-webkit-scrollbar-track {
+  background-color: rgb(44, 44, 44);
+}
+
 /* each item in the total tasks */
 .task-item {
   background-color: gainsboro;
 
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 
   height: 100px;
   width: 100px;
