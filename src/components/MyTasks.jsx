@@ -13,7 +13,7 @@ export default function MyTasks(props) {
                     <button>
                         <i className="fa-regular fa-trash-can action-btn danger"></i>
                     </button>
-                    <button>
+                    <button onClick={() => props.onToggleComplete(item.id, item.completed==false?true:false)}>
                         {item.completed ?
                             <i className="fa-solid fa-circle-check action-btn"></i> :
                             <i className="fa-regular fa-circle-check action-btn inactive"></i>}

@@ -22,11 +22,22 @@ export default function App() {
     setNewItem("");
   }
 
+  function toggleCompleteCheck(key, completed) {
+    setTodoList(currentTodo => { 
+      return currentTodo.map(todoItem => { 
+        if (todoItem.id === key) {
+          return {...todoItem, completed}
+        }
+        return todoItem;
+      });
+    });
+  }
+
   return <div className="background">
     <div className="opaque-bg"></div>
     <div className="app">
       <MyForm newItem={newItem} onSubmit={addNewItem} onChange={changeNewItem}></MyForm>
-      <MyTasks todoList={todoList}></MyTasks>
+      <MyTasks todoList={todoList} onToggleComplete={toggleCompleteCheck}></MyTasks>
     </div>
   </div>
 }
