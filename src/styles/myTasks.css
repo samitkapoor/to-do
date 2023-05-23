@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* each item in the total tasks */
+.task-item {
+  background-color: gainsboro;
+
+  padding: 10px;
+  border-radius: 10px;
+
+  height: 100px;
+  width: 100px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow: hidden;
+}
+
+.title {
+  height: 50px;
+  width: 100%;
+
+  font-size: 14px;
+
+  text-overflow: ellipsis;
+}
+
+.action {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.action button {
+  outline: none;
+  border: none;
+
+  background-color: transparent;
+}
+
+.action-btn {
+  font-size: 20px;
+  color: rgb(31, 221, 31);
+
+  cursor: pointer;
+}
+
+.danger {
+  color: red;
+}
+
+.inactive {
+  color: rgb(40, 166, 207);
+}

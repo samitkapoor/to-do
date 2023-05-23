@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+
+  overflow: hidden;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+
+  background-image: url("https://picsum.photos/1920/1080/?blur=10");
+  object-fit: cover;
+  background-position: center center;
+}
+
+.background * {
+  grid-area: 1/1;
+}
+
+/* used to add that extra darkness to the image */
+.opaque-bg {
+  height: 100vh;
+  width: 100vw;
+
+  background-color: black;
+  opacity: 0.4;
+
+  z-index: 0;
+}
+
+.app {
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
