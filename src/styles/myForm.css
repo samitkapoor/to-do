@@ -42,3 +42,21 @@ form button {
 
   cursor: pointer;
 }
+
+@media (max-width: 670px) {
+  form {
+    margin-top: 15vh;
+  }
+
+  /* enter task input */
+  form input {
+    width: 250px;
+
+    font-size: 0.8em;
+  }
+
+  /* submit button */
+  form button {
+    font-size: 0.8em;
+  }
+}

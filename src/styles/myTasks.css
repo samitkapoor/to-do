@@ -98,3 +98,44 @@
 .inactive {
   color: rgb(40, 166, 207);
 }
+
+@media (max-width: 850px) {
+  .tasks {
+    width: 650px;
+    gap: 8px;
+  }
+
+  /* each item in the total tasks */
+  .task-item {
+    height: 90px;
+    width: 90px;
+  }
+
+  .title {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 670px) {
+  .tasks {
+    width: 500px;
+    height: 60vh;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 525px) {
+  .tasks {
+    width: 300px;
+    gap: 8px;
+  }
+
+  .task-item {
+    height: 100px;
+    width: 100px;
+  }
+
+  .title {
+    font-size: 13px;
+  }
+}
